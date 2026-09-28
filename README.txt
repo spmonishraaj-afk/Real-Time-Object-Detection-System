@@ -1,53 +1,36 @@
-# Smart Face Detection System
+# Real-Time Object Detection System
 
-A simple Computer Vision project built with Python, OpenCV and Streamlit.
+A simple Computer Vision application that uses a webcam to detect objects in real time. The application uses a pretrained YOLO model with OpenCV and provides an interactive Streamlit interface.
 
-## What it does
+## Features
 
-1. User uploads an image.
-2. The image is converted to grayscale.
-3. OpenCV Haar Cascade detects faces.
-4. Bounding boxes are drawn around detected faces.
-5. The application displays the result and face count.
+- Real-time object detection using webcam
+- Detects multiple objects in a single frame
+- Displays object names
+- Displays confidence scores
+- Draws bounding boxes around detected objects
+- Simple Streamlit interface
+- Uses a pretrained YOLO model
 
-## Technologies
+## Tech Stack
 
 - Python
+- YOLO
 - OpenCV
-- NumPy
-- Pillow
 - Streamlit
+- Ultralytics
 
-## How to run
+## How It Works
 
-Open PowerShell in this project folder.
-
-Install the required packages:
-
-pip install -r requirements.txt
-
-Start the application:
-
-streamlit run app.py
-
-The application will open in your browser.
-
-## Project structure
-
-Smart_Face_Detection_OpenCV/
-    app.py
-    requirements.txt
-    README.txt
-
-## Resume Project Name
-
-Smart Face Detection System
-
-Python | OpenCV | Streamlit | NumPy
-
-Resume points:
-
-- Developed a simple Computer Vision application using Python and OpenCV to detect faces from uploaded images.
-- Used Haar Cascade face detection and grayscale image processing to identify faces.
-- Added bounding-box visualization and automatic face counting.
-- Built a Streamlit interface for easy image upload and result visualization.
+```text
+Webcam
+   ↓
+OpenCV
+   ↓
+YOLO Model
+   ↓
+Object Detection
+   ↓
+Bounding Boxes + Confidence
+   ↓
+Streamlit
